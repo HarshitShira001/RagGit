@@ -1,0 +1,27 @@
+.wrapper { display: flex; gap: 9px; align-items: flex-start; animation: fadeIn 0.2s ease-out; }
+@keyframes fadeIn { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
+.userWrapper { flex-direction: row-reverse; }
+.assistantWrapper { flex-direction: row; }
+.avatar {
+  width: 26px; height: 26px; border-radius: 6px; font-family: var(--font-mono);
+  font-size: 9px; font-weight: 600; display: flex; align-items: center;
+  justify-content: center; flex-shrink: 0; letter-spacing: 0.03em;
+}
+.userWrapper .avatar { background: var(--accent-dim); color: var(--accent-bright); border: 1px solid var(--border-bright); }
+.assistantWrapper .avatar { background: var(--green-dim); color: var(--green); border: 1px solid rgba(16,185,129,0.2); }
+.bubble { max-width: 82%; border-radius: var(--radius); font-size: 12.5px; line-height: 1.65; }
+.userBubble { background: var(--accent-dim); border: 1px solid var(--border-bright); color: var(--text-primary); padding: 9px 13px; border-bottom-right-radius: 4px; }
+.assistantBubble { background: var(--surface); border: 1px solid var(--border); color: var(--text-primary); padding: 10px 13px; border-bottom-left-radius: 4px; }
+.content { word-break: break-word; }
+.codeBlock { background: var(--bg-0); border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; margin: 8px 0; }
+.codeHeader { display: flex; justify-content: space-between; align-items: center; padding: 5px 10px; background: var(--bg-2); border-bottom: 1px solid var(--border); }
+.codeLang { font-family: var(--font-mono); font-size: 10px; color: var(--text-dim); letter-spacing: 0.05em; }
+.copyBtn { font-family: var(--font-mono); font-size: 10px; color: var(--text-dim); transition: color 0.2s; }
+.copyBtn:hover { color: var(--accent-bright); }
+.pre { padding: 10px 12px; overflow-x: auto; font-family: var(--font-mono); font-size: 11px; line-height: 1.6; color: var(--text-code); white-space: pre; }
+.inlineCode { font-family: var(--font-mono); font-size: 11px; background: var(--bg-3); color: var(--text-code); padding: 1px 5px; border-radius: 4px; border: 1px solid var(--border); }
+.sources { margin-top: 8px; border-top: 1px solid var(--border); padding-top: 8px; }
+.sourcesToggle { font-family: var(--font-mono); font-size: 10px; color: var(--text-dim); transition: color 0.2s; }
+.sourcesToggle:hover { color: var(--accent-bright); }
+.sourcesList { margin-top: 6px; display: flex; flex-direction: column; gap: 5px; }
+.sourceChunk { font-family: var(--font-mono); font-size: 10px; color: var(--text-dim); background: var(--bg-0); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 6px 8px; overflow-x: auto; white-space: pre-wrap; word-break: break-word; }

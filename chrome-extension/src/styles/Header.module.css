@@ -1,0 +1,37 @@
+.header {
+  padding: 12px 14px 10px; border-bottom: 1px solid var(--border);
+  background: var(--bg-0); display: flex; flex-direction: column; gap: 8px;
+}
+.top { display: flex; align-items: center; justify-content: space-between; }
+.brand { display: flex; align-items: center; gap: 7px; }
+.logo { font-size: 18px; color: var(--accent); filter: drop-shadow(0 0 8px var(--accent-glow)); }
+.title { font-weight: 800; font-size: 15px; letter-spacing: -0.03em; }
+.accent { color: var(--accent-bright); }
+.resetBtn {
+  font-family: var(--font-mono); font-size: 10px; color: var(--text-dim);
+  letter-spacing: 0.03em; transition: color 0.2s;
+}
+.resetBtn:hover { color: var(--accent-bright); }
+
+.fileMeta {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 6px 10px; background: var(--surface);
+  border: 1px solid var(--border); border-radius: var(--radius-sm);
+}
+.fileChip { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.fileIcon { font-size: 14px; flex-shrink: 0; }
+.fileName {
+  font-family: var(--font-mono); font-size: 11px; color: var(--text-code);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 180px;
+}
+.badges { display: flex; gap: 5px; align-items: center; flex-shrink: 0; }
+.badge {
+  font-family: var(--font-mono); font-size: 10px;
+  background: var(--accent-dim); color: var(--accent-bright);
+  border: 1px solid var(--border-bright); padding: 2px 7px; border-radius: 100px;
+}
+.badgeGray {
+  font-family: var(--font-mono); font-size: 10px;
+  background: var(--bg-4); color: var(--text-dim);
+  border: 1px solid var(--border); padding: 2px 7px; border-radius: 100px;
+}
